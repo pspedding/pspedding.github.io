@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economics 2026 — Self-Study Courses</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f4f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 0.75rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #4a5568;
+      max-width: 560px;
+      line-height: 1.6;
+    }
+    .courses {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      width: 100%;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 2.2rem 2rem;
+      width: 380px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-top: 5px solid #667eea;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+    }
+    .card.micro { border-top-color: #00897b; }
+    .card-icon { font-size: 2.8rem; margin-bottom: 1rem; }
+    .card h2 { font-size: 1.4rem; color: #1a202c; margin-bottom: 0.5rem; }
+    .card .subtitle { font-size: 0.9rem; color: #718096; margin-bottom: 1.2rem; }
+    .card .stats {
+      display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;
+    }
+    .stat {
+      background: #f7fafc;
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.82rem;
+      color: #4a5568;
+      font-weight: 500;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: white;
+      background: #667eea;
+      text-decoration: none;
+    }
+    .card.micro .btn { background: #00897b; }
+    .footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #a0aec0;
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .card { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>📚 Economics 2026</h1>
+    <p>Self-study courses aligned with USYD economics units.<br>
+    111 lessons each · Australian context throughout · Quizzes, flashcards, and diagrams.</p>
+  </div>
+
+  <div class="courses">
+
+    <a class="card" href="https://pspedding.github.io/macro-course-2026/">
+      <div class="card-icon">📈</div>
+      <h2>Macroeconomics</h2>
+      <div class="subtitle">ECON1002 + ECOS2002 · Introductory &amp; Intermediate</div>
+      <div class="stats">
+        <span class="stat">111 lessons</span>
+        <span class="stat">21 modules</span>
+        <span class="stat">475 quiz questions</span>
+        <span class="stat">8 diagrams</span>
+      </div>
+      <span class="btn">Open course →</span>
+    </a>
+
+    <a class="card micro" href="https://pspedding.github.io/micro-course-2026/">
+      <div class="card-icon">🏪</div>
+      <h2>Microeconomics</h2>
+      <div class="subtitle">ECON1001 + ECOS2001 · Introductory &amp; Intermediate</div>
+      <div class="stats">
+        <span class="stat">111 lessons</span>
+        <span class="stat">21 modules</span>
+        <span class="stat">630 quiz questions</span>
+        <span class="stat">14 diagrams</span>
+      </div>
+      <span class="btn">Open course →</span>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    Open-source content · USYD-aligned · Built with MkDocs
+  </div>
+
+</body>
+</html>
